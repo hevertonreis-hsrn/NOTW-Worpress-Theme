@@ -61,7 +61,9 @@
                 </div>
             </div>
             <div class="row sign_container">
-                <p class="copy_sign">&copy; <?php the_time( $format = 'Y' ) ?> NW Group -  A company of Queen Media Corp</p>
+                <div class="copy_sign">
+                    &copy; <?php the_time( $format = 'Y' ) ?> NOTW Wordpress Theme v1.0 - <a href="https://github.com/ronin-hr/NOTW-Worpress-Theme"></a>
+                </div>
                 <div class="developer_sign">
                     <a href="https://hevertonreis.wordpress.com/"></a>
                 </div>

@@ -8,20 +8,20 @@ Version: 1.0
 /*========================================*|
 ||        TABELA DE CONTEÚDO              ||
 ||                                        ||
-|| #Geral - L 30                          ||
-|| #Botão Modo Escuro - L 342             ||
-|| #Barra de Pesquisa - L 496             ||
-|| #Barra de Anuncios - L 596             ||
-|| #Corpo-Últimas Notícias - L 712        ||
-|| #Corpo-Brasil - L 932                  ||
-|| #Corpo-Sidebar - L 1036                ||
-|| #Corpo-Leia Mais - L 1158              ||
-|| #Corpo-Colunas - L 1674                ||
-|| #Footer - L 1774                       ||
-|| #Página-Single - L 2028                ||      
-|| #Página-Busca - L 2250                 ||
-|| #Página-Categorias - L 2460            ||
-|| #Botões Sociais - L 2560               ||
+|| #Geral - L 32                          ||
+|| #Botão Modo Escuro - L 358             ||
+|| #Barra de Pesquisa - L 514             ||
+|| #Barra de Anuncios - L 614             ||
+|| #Corpo-Últimas Notícias - L 728        ||
+|| #Corpo-Brasil - L 950                  ||
+|| #Corpo-Sidebar - L 1052                ||
+|| #Corpo-Leia Mais - L 1176              ||
+|| #Corpo-Colunas - L 1690                ||
+|| #Footer - L 1790                       ||
+|| #Página-Single - L 2056                ||      
+|| #Página-Busca - L 2276                 ||
+|| #Página-Categorias - L 2486            ||
+|| #Botões Sociais - L 2586               ||
 |*========================================*/
 
 /*==================================*|
@@ -311,6 +311,20 @@ body {
     }
     
     #menu-item-8 {
+        display: none;
+    }
+    
+    #menu-item-346 {
+        display: none;
+    }
+}
+
+@media screen and (max-device-width: 1024px) and (max-device-height: 1366px) {
+    #menu-item-8 {
+        display: none;
+    }
+    
+    #menu-item-329 {
         display: none;
     }
     
@@ -1183,7 +1197,8 @@ input:checked + .slider:before {
 .readMore_card_01_info {
     position: relative;
     z-index: 1;
-    margin-top: -195px;
+    margin-top: -200px;
+    height: 200px;
     padding: 10px;
     opacity: 1;
     background-color: rgba(0,51,102,0.2);
@@ -1499,7 +1514,7 @@ input:checked + .slider:before {
     }  
 }
 
-@media screen and (min-device-width: 768px) and (min-device-height: 1024px){
+@media screen and (max-device-width: 768px) and (max-device-height: 1024px){
     .readMore_card_01_info {
         position: relative;
         z-index: 1;
@@ -1627,15 +1642,13 @@ input:checked + .slider:before {
     }
 }
 
-@media screen and (min-device-width: 1025px){
-    .readMore_card_01_info.dark_mode {
-        background-color: rgba(255,182,36,0.2);
-    }
-}
-
 /*-----------------------------------*
 |           Modo Escuro              |    
 *------------------------------------*/
+
+.readMore_card_01_info.dark_mode {
+    background-color: rgba(242,185,42,0.2);
+}
 
 .readMore_card_02_header.dark_mode a{
     color:#F2B92A;
@@ -1945,16 +1958,28 @@ input:checked + .slider:before {
 }
 
 .copy_sign {
-    display: block;
+    display: inline-block;
     float: left;
     color: #fff;
-    margin-top: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.copy_sign a {
+    display: inline-block;
+    background-image: url(assets/images/github_icon_White.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
 }
 
 .developer_sign {
     display: block;
     float: right;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .developer_sign a {
